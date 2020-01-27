@@ -13,7 +13,7 @@ public class Calculator {
     /**
      * constant number to use inside calculating methods
      */
-    private final int numberTen = 10;
+    private final static int numberTen = 10;
 
     /**
      * method that finds digits quantity of input number
@@ -22,7 +22,7 @@ public class Calculator {
      * @return result
      * best ever project
      */
-    public int getDigitQuantity(final int testNumber) {
+    public static int getDigitQuantity(final int testNumber) {
         int result = 1;
         int number = testNumber;
         while (abs(number) >= numberTen) {
@@ -39,7 +39,7 @@ public class Calculator {
      * @return result
      * friendly fire
      */
-    public int getDigitSum(final int number) {
+    public static int getDigitSum(final int number) {
         int result = 0;
         int testNumber = number;
         while (abs(testNumber) > 0) {
@@ -57,7 +57,7 @@ public class Calculator {
      * @return resultList
      * majeed
      */
-    public List<Integer> getPerfectNumbersList(final int number) {
+    public static List<Integer> getPerfectNumbersList(final int number) {
         List<Integer> resultList = new ArrayList<Integer>();
         for (int i = 1; i <= number; i++) {
             int result = 0;
