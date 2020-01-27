@@ -3,7 +3,12 @@ import huliaka.maksym.Calculator;
 import isachenko.dmytro.Task;
 
 import latyk.borys.Algorythm;
+
 import puiko.vadym.MathOperation;
+
+import pyzh.andriy.Power;
+import pyzh.andriy.SumOfTwoSquares;
+
 
 import java.io.IOException;
 
@@ -62,6 +67,18 @@ public class Main {
                 System.out.println(MathOperation.getSumOfThreeSquaresB(inputValue));
                 break;
             //Puiko Vadym
+
+            //Andriy Pyzh
+            case ("107"):
+                System.out.println(Power.find(inputValue));
+                break;
+            case ("243a"):
+                System.out.println(SumOfTwoSquares.exist(inputValue));
+                break;
+            case ("243b"):
+                System.out.println(SumOfTwoSquares.find(inputValue));
+                break;
+            // Andriy Pyzh
 
         }
     }
