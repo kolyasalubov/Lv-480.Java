@@ -59,7 +59,6 @@ hs_err_pid*
 # .idea/*.iml
 # .idea/modules
 # *.iml
-.idea/*
 # *.ipr
 
 # CMake
@@ -73,6 +72,7 @@ cmake-build-*/
 
 # IntelliJ
 out/
+.idea/*
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
