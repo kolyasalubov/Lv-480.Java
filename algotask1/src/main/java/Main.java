@@ -1,7 +1,10 @@
 import huliaka.maksym.Calculator;
+import latyk.borys.Algorythm;
+
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String inputChoise = args[0];
         int inputValue = Integer.valueOf(args[1]);
 
@@ -19,8 +22,17 @@ public class Main {
                 break;
             //Huliaka Maksym
 
-            case (""):
+            //Latyk Borys
+            case ("88в"):
+                System.out.println(Algorythm.swapDigits());
                 break;
+            case ("88г"):
+                System.out.println(Algorythm.addDigits());
+                break;
+            case ("332"):
+                System.out.println(Algorythm.checkTheorem());
+                break;
+            //Latyk Borys
         }
     }
 }
