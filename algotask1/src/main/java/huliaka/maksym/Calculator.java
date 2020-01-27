@@ -1,3 +1,4 @@
+package huliaka.maksym;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -5,18 +6,19 @@ import java.util.List;
 import static java.lang.Math.abs;
 
 /**
- * com.softserve is a group of bar utils for operating on task things.
+ * Java class with methods that realize algotasks
+ * 86 а),  86 б) , 330
  */
 public class Calculator {
     /**
-     * Some text here.
+     * constant number to use inside calculating methods
      */
     private final int numberTen = 10;
 
     /**
-     * Some text here.
+     * method that finds digits quantity of input number
      *
-     * @param testNumber makes me happy
+     * @param testNumber number to count digits quantity
      * @return result
      * best ever project
      */
@@ -31,9 +33,9 @@ public class Calculator {
     }
 
     /**
-     * Some text here.
+     * method that calculates digits sum of input number
      *
-     * @param number makes me hddappy
+     * @param number number to calculate digits sum
      * @return result
      * friendly fire
      */
@@ -49,9 +51,9 @@ public class Calculator {
 
 
     /**
-     * Some text here.
+     * method that finds perfect numbers thet smaller than input number paramether
      *
-     * @param number makes me hddappy
+     * @param number
      * @return resultList
      * majeed
      */

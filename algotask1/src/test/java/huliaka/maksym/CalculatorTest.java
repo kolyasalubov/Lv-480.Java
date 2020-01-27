@@ -1,17 +1,19 @@
-import static org.junit.jupiter.api.Assertions.*;
+package huliaka.maksym;
 
-import org.junit.jupiter.api.*;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class CalculatorTest {
+import static org.junit.Assert.*;
+
+public class CalculatorTest {
 
     Calculator calculation = new Calculator();
 
     @Test
-    void getDigitQuantity() {
+    public void getDigitQuantity() {
         assertEquals(10, calculation.getDigitQuantity(1111111111));
         assertEquals(4, calculation.getDigitQuantity(-9999));
         assertEquals(2, calculation.getDigitQuantity(-99));
@@ -19,7 +21,7 @@ class CalculatorTest {
     }
 
     @Test
-    void getDigitSum() {
+    public void getDigitSum() {
         assertEquals(1, calculation.getDigitSum(100));
         assertEquals(18, calculation.getDigitSum(-99));
         assertEquals(5, calculation.getDigitSum(-5));
@@ -27,13 +29,13 @@ class CalculatorTest {
     }
 
     @Test
-    void getPerfectNumbersList() {
+    public void getPerfectNumbersList() {
         List<Integer> perfectNumList = calculation.getPerfectNumbersList(-1);
         assertEquals(0, perfectNumList.size());
     }
 
     @Test
-     void getPerfectNumberList() {
+    public void getPerfectNumberList() {
         List<Integer> etalonPerfectNumList = Arrays.asList(6, 28, 496, 8128, 33550336);
         List<Integer> numList = etalonPerfectNumList.stream().filter(a -> (a <= 8128)).collect(Collectors.toList());
         List<Integer> perfectNumList = calculation.getPerfectNumbersList(8128);
