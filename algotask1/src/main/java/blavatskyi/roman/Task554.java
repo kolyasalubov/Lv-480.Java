@@ -8,6 +8,7 @@ public class Task554 {
     private static BufferedReader reader = new BufferedReader(
             new InputStreamReader(System.in));
 
+
     public static void main(String[] args) throws IOException {
         getAllPythagoreanTriplesOfNumber();
     }
