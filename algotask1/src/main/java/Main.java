@@ -1,4 +1,5 @@
 import huliaka.maksym.Calculator;
+import isachenko.dmytro.Task;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +19,16 @@ public class Main {
                 System.out.println(Calculator.getPerfectNumbersList(inputValue).toString());
                 break;
             //Huliaka Maksym
-
+            case ("88а"):
+                System.out.println(Task.containsThree(inputValue));
+                break;
+            case ("88b"):
+                System.out.println(Task.reverse(inputValue));
+                break;
+            case ("322"):
+                System.out.println(Task.findsum());
+                break;
+                //Isachenko Dima
             case (""):
                 break;
         }
