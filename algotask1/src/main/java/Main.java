@@ -3,6 +3,7 @@ import huliaka.maksym.Calculator;
 import isachenko.dmytro.Task;
 
 import latyk.borys.Algorythm;
+import puiko.vadym.MathOperation;
 
 import java.io.IOException;
 
@@ -49,6 +50,19 @@ public class Main {
                 System.out.println(Algorythm.checkTheorem());
                 break;
             //Latyk Borys
+
+            //Puiko Vadym
+            case ("108"):
+                System.out.println(MathOperation.getSmallestNumber(inputValue));
+                break;
+            case ("331а"):
+                MathOperation.getSumOfThreeSquaresA(inputValue).forEach(System.out::println);
+                break;
+            case ("331б"):
+                System.out.println(MathOperation.getSumOfThreeSquaresB(inputValue));
+                break;
+            //Puiko Vadym
+
         }
     }
 }
