@@ -46,7 +46,6 @@ public class Main {
                         ThirdTask.getAllPythagoreanTriplesOfNumber();
                         break;
                     //Roman Blavatskyi
-
                     //Maksym Huliaka
                     case ("86a"):
                         System.out.println("Number to calculate digit quantity");
@@ -64,6 +63,20 @@ public class Main {
                         System.out.println(Calculator.getPerfectNumbersList(inputValue3).toString());
                         break;
                     //Maksym Huliaka
+                    //Borys Latyk
+                    case ("88в"):
+                        System.out.println("Swap the first and the last digit "
+                                + Algorythm.swapDigits());
+                        break;
+                    case ("88г"):
+                        System.out.println("Add digit 1 to the beginning end to the end of number"
+                                + Algorythm.addDigits());
+                        break;
+                    case ("332"):
+                        System.out.println("Lagrange theorem " +
+                        Algorythm.checkTheorem());
+                        break;
+                    //Borys Latyk
 
                 }
             } else {
@@ -79,4 +92,3 @@ public class Main {
                 + "\tPress <- 2 -> to exit.");
     }
 }
-
