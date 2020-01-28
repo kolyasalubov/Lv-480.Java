@@ -22,9 +22,11 @@ import blavatskyi.roman.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.logging.Logger;
 
 
 public class Main {
+    public static Logger logger=Logger.getLogger(Main.class.getName());
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         boolean flag = true;
@@ -33,18 +35,19 @@ public class Main {
             printMenu();
             temp = Integer.parseInt(reader.readLine());
             if (temp == 1) {
-                System.out.println("Enter number of your task:");
+               logger.info("Enter number of your task:");
                 String inputChoice = reader.readLine();
                 switch (inputChoice) {
 
                     //Roman Blavatskyi
+
                     case ("178b"):
-                        System.out.println("Amount of sequence members "
+                        logger.info("Amount of sequence members "
                                 + "by multiples of 3 and not multiples of 5: "
                                 + FirstTask.getAmountOfMultiples());
                         break;
                     case ("178c"):
-                        System.out.println("Amount of sequence members "
+                       logger.info("Amount of sequence members "
                                 + "that are squares of even numbers: "
                                 + SecondTask.getAmountSquaresOfEvenNumbers());
                         break;
@@ -69,53 +72,53 @@ public class Main {
 =======
                     //Maksym Huliaka
                     case ("86a"):
-                        System.out.println("Number to calculate digit quantity");
+                        logger.info("Number to calculate digit quantity");
                         int inputValue = Integer.parseInt(reader.readLine());
-                        System.out.println(Calculator.getDigitQuantity(inputValue));
+                        logger.info(String.valueOf(Calculator.getDigitQuantity(inputValue)));
                         break;
                     case ("86b"):
-                        System.out.println("Number to calculate digit sum");
+                        logger.info("Number to calculate digit sum");
                         int inputValue2 = Integer.parseInt(reader.readLine());
-                        System.out.println(Calculator.getDigitSum(inputValue2));
+                        logger.info(String.valueOf(Calculator.getDigitSum(inputValue2)));
                         break;
                     case ("330"):
-                        System.out.println("perfect numbers that lower than number:");
+                        logger.info("perfect numbers that lower than number:");
                         int inputValue3 = Integer.parseInt(reader.readLine());
-                        System.out.println(Calculator.getPerfectNumbersList(inputValue3).toString());
+                        logger.info(String.valueOf(Calculator.getPerfectNumbersList(inputValue3).toString()));
                         break;
                     //Maksym Huliaka
                     //Borys Latyk
                     case ("88в"):
-                        System.out.println("Swap the first and the last digit "
+                        logger.info("Swap the first and the last digit "
                                 + Algorythm.swapDigits());
                         break;
                     case ("88г"):
-                        System.out.println("Add digit 1 to the beginning end to the end of number"
+                        logger.info("Add digit 1 to the beginning end to the end of number "
                                 + Algorythm.addDigits());
                         break;
                     case ("332"):
-                        System.out.println("Lagrange theorem " +
+                        logger.info("Lagrange theorem " +
                         Algorythm.checkTheorem());
                         break;
                     //Borys Latyk
 
                     //Puiko Vadym
                     case ("108"):
-                        System.out.println("Дано натуральне число n. Отримати найменше число 2^r, яке перевищює n."
+                        logger.info("Дано натуральне число n. Отримати найменше число 2^r, яке перевищює n."
                                 + "\n" + "Enter n: ");
-                        System.out.println(MathOperation.getSmallestNumber(Integer.parseInt(reader.readLine())));
+                        logger.info(String.valueOf(MathOperation.getSmallestNumber(Integer.parseInt(reader.readLine()))));
                         break;
                     case ("331a"):
-                        System.out.println("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
                         MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(System.out::println);
                         break;
                     case ("331b"):
-                        System.out.println("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати всю трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
-                        System.out.println(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));
+                        logger.info(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));
                         break;
                     //Puiko Vadym
 
@@ -129,7 +132,7 @@ public class Main {
     }
 
     private static void printMenu() {
-        System.out.println("Options menu:\n"
+        logger.info("Options menu:\n"
                 + "\tPress <- 1 -> to solve logical tasks.\n"
                 + "\tPress <- 2 -> to exit.");
     }
