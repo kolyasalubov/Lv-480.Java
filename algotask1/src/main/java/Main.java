@@ -49,6 +49,17 @@
                             break;
                         //Roman Blavatskyi
 
+                        //Mykola Borovets
+                        case ("178e"):
+                            logger.info("Amount of sequence members: "
+                                    + FirstCondition.getAmountOfNumbers());
+                            break;
+                        case ("178d"):
+                            logger.info("Amount of sequence members: "
+                                    + SecondCondition.getAmountOfNumbers());
+                            break;
+                        //Mykola Borovets
+                        
                         //Maksym Huliaka
                         case ("86a"):
                             logger.info("Number to calculate digit quantity");
