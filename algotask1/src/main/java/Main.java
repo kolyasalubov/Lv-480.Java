@@ -59,7 +59,7 @@
                                     + SecondCondition.getAmountOfNumbers());
                             break;
                         //Mykola Borovets
-                        
+
                         //Maksym Huliaka
                         case ("86a"):
                             logger.info("Number to calculate digit quantity");
