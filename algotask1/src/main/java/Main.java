@@ -78,6 +78,26 @@ public class Main {
                         break;
                     //Borys Latyk
 
+                    //Puiko Vadym
+                    case ("108"):
+                        System.out.println("Дано натуральне число n. Отримати найменше число 2^r, яке перевищює n."
+                                + "\n" + "Enter n: ");
+                        System.out.println(MathOperation.getSmallestNumber(Integer.parseInt(reader.readLine())));
+                        break;
+                    case ("331a"):
+                        System.out.println("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                                "\n" + "Якщо можна, то вказати трійку x, y, z таких натуральних чисел," +
+                                "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
+                        MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(System.out::println);
+                        break;
+                    case ("331b"):
+                        System.out.println("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                                "\n" + "Якщо можна, то вказати всю трійку x, y, z таких натуральних чисел," +
+                                "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
+                        System.out.println(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));
+                        break;
+                    //Puiko Vadym
+
                 }
             } else {
                 flag = false;
