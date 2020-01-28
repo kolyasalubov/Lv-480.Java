@@ -23,10 +23,10 @@ public class Main {
                 System.out.println(Task.containsThree(inputValue));
                 break;
             case ("88b"):
-                System.out.println(Task.reverse(inputValue));
+                System.out.println(Task.findReverse(inputValue));
                 break;
             case ("322"):
-                System.out.println(Task.findsum());
+                System.out.println(Task.findSum());
                 break;
                 //Isachenko Dima
             case (""):
