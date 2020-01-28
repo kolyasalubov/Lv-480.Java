@@ -90,5 +90,5 @@ public class Main {
                 + "\tPress <- 1 -> to solve logical tasks.\n"
                 + "\tPress <- 2 -> to exit.");
     }
-}}
+}
 
