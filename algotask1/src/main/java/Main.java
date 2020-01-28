@@ -1,22 +1,8 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> d806a9f8b79f5b256c8d0d332d98d5244f5712f9
-
-
-import borovets.mykola.CheckFirstCondition;
-import borovets.mykola.checkSecondCondition;
+import borovets.mykola.FirstCondition;
+import borovets.mykola.SecondCondition;
 import huliaka.maksym.Calculator;
-
-import isachenko.dmytro.Task;
-
 import latyk.borys.Algorythm;
-
 import puiko.vadym.MathOperation;
-
-import pyzh.andriy.Power;
-import pyzh.andriy.SumOfTwoSquares;
-
 import blavatskyi.roman.*;
 
 import java.io.BufferedReader;
@@ -55,21 +41,16 @@ public class Main {
                         ThirdTask.getAllPythagoreanTriplesOfNumber();
                         break;
                     //Roman Blavatskyi
-<<<<<<< HEAD
-
                     //Mykola Borovets
                     case ("178e"):
-                        System.out.println("Amount of sequence members "
-                                + "by multiples of 3 and not multiples of 5: "
-                                + CheckFirstCondition.getAmountSquaresOfEvenNumbers1());
+                        logger.info("Amount of sequence members: "
+                                + FirstCondition.getAmountOfNumbers());
                         break;
                     case ("178d"):
-                        System.out.println("Amount of sequence members "
-                                + "by multiples of 3 and not multiples of 5: "
-                                + checkSecondCondition.getAmountSquaresOfEvenNumbers1());
+                        logger.info("Amount of sequence members: "
+                                + SecondCondition.getAmountOfNumbers());
                         break;
                     //Mykola Borovets
-=======
                     //Maksym Huliaka
                     case ("86a"):
                         logger.info("Number to calculate digit quantity");
@@ -121,8 +102,6 @@ public class Main {
                         logger.info(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));
                         break;
                     //Puiko Vadym
-
->>>>>>> d806a9f8b79f5b256c8d0d332d98d5244f5712f9
                 }
             } else {
                 flag = false;
