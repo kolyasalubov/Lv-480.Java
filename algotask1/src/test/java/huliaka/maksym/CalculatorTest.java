@@ -1,5 +1,6 @@
-package huliaka.maksym;
+package java.huliaka.maksym;
 
+import huliaka.maksym.Calculator;
 import org.junit.Test;
 
 import java.util.Arrays;
