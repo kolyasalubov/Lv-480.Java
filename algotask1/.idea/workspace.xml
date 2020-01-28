@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51494a0b-0999-4836-9c91-30752899ff43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blavatskyi/roman/Task178b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blavatskyi/roman/FirstTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blavatskyi/roman/Task178c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blavatskyi/roman/SecondTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blavatskyi/roman/Task554.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blavatskyi/roman/ThirdTask.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +87,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="algotask1" />
+      <option name="PROGRAM_PARAMETERS" value="178b" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,6 +105,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.FirstTask" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ThirdTask" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -129,6 +130,7 @@
       <updated>1580123871009</updated>
       <workItem from="1580126198156" duration="4240000" />
       <workItem from="1580178076197" duration="11402000" />
+      <workItem from="1580199128917" duration="641000" />
     </task>
     <servers />
   </component>
