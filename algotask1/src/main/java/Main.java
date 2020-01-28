@@ -1,5 +1,3 @@
-
-
 import huliaka.maksym.Calculator;
 
 import isachenko.dmytro.Task;
@@ -20,7 +18,8 @@ import java.util.logging.Logger;
 
 
 public class Main {
-    public static Logger logger=Logger.getLogger(Main.class.getName());
+    public static Logger logger = Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         boolean flag = true;
@@ -29,19 +28,18 @@ public class Main {
             printMenu();
             temp = Integer.parseInt(reader.readLine());
             if (temp == 1) {
-               logger.info("Enter number of your task:");
+                logger.info("Enter number of your task:");
                 String inputChoice = reader.readLine();
                 switch (inputChoice) {
 
                     //Roman Blavatskyi
-
                     case ("178b"):
                         logger.info("Amount of sequence members "
                                 + "by multiples of 3 and not multiples of 5: "
                                 + FirstTask.getAmountOfMultiples());
                         break;
                     case ("178c"):
-                       logger.info("Amount of sequence members "
+                        logger.info("Amount of sequence members "
                                 + "that are squares of even numbers: "
                                 + SecondTask.getAmountSquaresOfEvenNumbers());
                         break;
@@ -49,6 +47,7 @@ public class Main {
                         ThirdTask.getAllPythagoreanTriplesOfNumber();
                         break;
                     //Roman Blavatskyi
+
                     //Maksym Huliaka
                     case ("86a"):
                         logger.info("Number to calculate digit quantity");
@@ -66,6 +65,7 @@ public class Main {
                         logger.info(String.valueOf(Calculator.getPerfectNumbersList(inputValue3).toString()));
                         break;
                     //Maksym Huliaka
+
                     //Borys Latyk
                     case ("88в"):
                         logger.info("Please enter a value");
@@ -91,18 +91,40 @@ public class Main {
                         logger.info(String.valueOf(MathOperation.getSmallestNumber(Integer.parseInt(reader.readLine()))));
                         break;
                     case ("331a"):
-                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Чи можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
-                        MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(System.out::println);
+                        MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(value -> logger.info(value));
                         break;
                     case ("331b"):
-                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Чи можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати всю трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
                         logger.info(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));
                         break;
                     //Puiko Vadym
+
+                    //Andriy Pyzh
+                    case ("107"):
+                        logger.info("Given number m > 1. Find k that 4 ^ k < m.\n" +
+                                "Input m:");
+                        int inputNumber1 = Integer.parseInt(reader.readLine());
+                        logger.info("k = " + Power.find(inputNumber1));
+                        break;
+                    case ("243a"):
+                        logger.info("Given number m > 1. Can number m be represented as sum of squares?\n" +
+                                "Input m: ");
+                        int inputNumber2 = Integer.parseInt(reader.readLine());
+                        logger.info("result: " + SumOfTwoSquares.exist(inputNumber2));
+                        break;
+                    case ("243b"):
+                        logger.info("Given number m > 1. Find all x, y that x ^ 2 + y ^ 2 = m " +
+                                "Input m: ");
+                        int inputNumber3 = Integer.parseInt(reader.readLine());
+                        logger.info("result: " + SumOfTwoSquares.find(inputNumber3));
+                        break;
+                    //Andriy Pyzh
+
 
                 }
             } else {
