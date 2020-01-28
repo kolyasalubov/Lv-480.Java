@@ -1,5 +1,3 @@
-
-
 import huliaka.maksym.Calculator;
 
 import isachenko.dmytro.Task;
@@ -35,7 +33,6 @@ public class Main {
                 switch (inputChoice) {
 
                     //Roman Blavatskyi
-
                     case ("178b"):
                         logger.info("Amount of sequence members "
                                 + "by multiples of 3 and not multiples of 5: "
@@ -50,6 +47,7 @@ public class Main {
                         ThirdTask.getAllPythagoreanTriplesOfNumber();
                         break;
                     //Roman Blavatskyi
+
                     //Maksym Huliaka
                     case ("86a"):
                         logger.info("Number to calculate digit quantity");
@@ -67,6 +65,7 @@ public class Main {
                         logger.info(String.valueOf(Calculator.getPerfectNumbersList(inputValue3).toString()));
                         break;
                     //Maksym Huliaka
+
                     //Borys Latyk
                     case ("88в"):
                         logger.info("Swap the first and the last digit "
@@ -89,13 +88,13 @@ public class Main {
                         logger.info(String.valueOf(MathOperation.getSmallestNumber(Integer.parseInt(reader.readLine()))));
                         break;
                     case ("331a"):
-                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Чи можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
-                        MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(System.out::println);
+                        MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(value -> logger.info(value));
                         break;
                     case ("331b"):
-                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Чи можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати всю трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
                         logger.info(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));
