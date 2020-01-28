@@ -1,16 +1,5 @@
 
-
-import huliaka.maksym.Calculator;
-
-import isachenko.dmytro.Task;
-
 import latyk.borys.Algorythm;
-
-import puiko.vadym.MathOperation;
-
-import pyzh.andriy.Power;
-import pyzh.andriy.SumOfTwoSquares;
-
 import blavatskyi.roman.*;
 
 import java.io.BufferedReader;
@@ -52,7 +41,7 @@ public class Main {
                                 + Algorythm.swapDigits());
                         break;
                     case ("88г"):
-                        System.out.println("Add digit 1 to the beginning end to the end of number"
+                        System.out.println("Add digit 1 to the beginning end to the end of number: "
                                 + Algorythm.addDigits());
                         break;
                     case ("332"):
