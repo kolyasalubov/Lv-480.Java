@@ -26,7 +26,6 @@ public class Algorythm {
         builder.append(start);
 
         int number = Integer.parseInt(String.valueOf((builder)));
-        System.out.println(number);
         return number;
     }
 
@@ -39,7 +38,6 @@ public class Algorythm {
         builder.append("1");
 
         int updatedNumber = Integer.parseInt(String.valueOf(builder));
-        System.out.println(updatedNumber);
         return updatedNumber;
     }
 
@@ -66,8 +64,6 @@ public class Algorythm {
         lagrangeDigits.add(thirdDigit);
         lagrangeDigits.add(fourthDigit);
 
-        System.out.print(lagrangeDigits);
-        System.out.println();
         return lagrangeDigits;
     }
 }
