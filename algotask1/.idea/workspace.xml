@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51494a0b-0999-4836-9c91-30752899ff43" name="Default Changelist" comment="">
+    <list default="true" id="755b01fd-c127-4b2c-b2ce-0b20ba942080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="D:/Lv-480.Java/algotask1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,6 +66,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main.java.Main" />
       <module name="algotask1" />
       <method v="2">
@@ -99,7 +100,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="51494a0b-0999-4836-9c91-30752899ff43" name="Default Changelist" comment="" />
+      <changelist id="755b01fd-c127-4b2c-b2ce-0b20ba942080" name="Default Changelist" comment="" />
       <created>1580123871009</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -110,6 +111,10 @@
       <workItem from="1580201114017" duration="210000" />
       <workItem from="1580201894898" duration="4100000" />
       <workItem from="1580239457163" duration="1422000" />
+      <workItem from="1580243104653" duration="26000" />
+      <workItem from="1580243213239" duration="54000" />
+      <workItem from="1580243395844" duration="92000" />
+      <workItem from="1580243521897" duration="331000" />
     </task>
     <servers />
   </component>
@@ -130,38 +135,46 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580240879611">
+    <state x="275" y="21" key="#Notifications" timestamp="1580243404064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580240879611" />
-    <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580202024566">
+    <state x="275" y="21" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1580243404064" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580243833754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580202024566" />
-    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580239498675">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580243833754" />
+    <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580243828751">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1580239498675" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1580204334116">
+    <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580243828751" />
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580243821762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580204334116" />
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1580240884378">
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1580243821762" />
+    <state x="263" y="18" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1580243819987">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1580240884378">
+    <state x="263" y="18" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1366.728@0.0.1366.728" timestamp="1580243819987" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1580243486983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1580240884378">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580243486983" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1580243852152">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1580240884378">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580243852152" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1580243852152">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580243852152" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1580243852152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580243852152" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1580243852152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580243852152" />
     <state x="499" y="141" key="chooseDestDirectoryDialog" timestamp="1580202163664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
