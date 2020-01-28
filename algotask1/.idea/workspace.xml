@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51494a0b-0999-4836-9c91-30752899ff43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huliaka/maksym/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huliaka/maksym/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/latyk/borys/Algorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/latyk/borys/Algorythm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/latyk/borys/Algorythm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/huliaka/maksym/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/huliaka/maksym/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +107,7 @@
       <workItem from="1580199128917" duration="641000" />
       <workItem from="1580201114017" duration="210000" />
       <workItem from="1580201894898" duration="4100000" />
+      <workItem from="1580239457163" duration="597000" />
     </task>
     <servers />
   </component>
@@ -129,10 +136,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580202024566" />
-    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580201141582">
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580239498675">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1580201141582" />
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1580239498675" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1580204334116">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

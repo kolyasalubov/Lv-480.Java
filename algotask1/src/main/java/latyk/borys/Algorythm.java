@@ -1,8 +1,10 @@
 package latyk.borys;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class Algorythm {
     /**
@@ -11,9 +13,10 @@ public class Algorythm {
      */
     private static BufferedReader reader = new BufferedReader(
             new InputStreamReader(System.in));
+    public static Logger logger = Logger.getLogger(Algorythm.class.getName());
 
-   public static int swapDigits() throws IOException {
-        System.out.println("Please enter a value");
+    public static int swapDigits() throws IOException {
+        logger.info("Please enter a value");
         StringBuilder builder = new StringBuilder();
 
         builder.append(reader.readLine());
@@ -26,12 +29,11 @@ public class Algorythm {
         builder.append(start);
 
         int number = Integer.parseInt(String.valueOf((builder)));
-        System.out.println(number);
         return number;
     }
 
-  public  static int addDigits() throws IOException {
-        System.out.println("Please enter a value");
+    public static int addDigits() throws IOException {
+        logger.info("Please enter a value");
         StringBuilder builder = new StringBuilder();
 
         builder.append(reader.readLine());
@@ -39,13 +41,12 @@ public class Algorythm {
         builder.append("1");
 
         int updatedNumber = Integer.parseInt(String.valueOf(builder));
-        System.out.println(updatedNumber);
         return updatedNumber;
     }
 
-   public static ArrayList<Integer> checkTheorem() throws IOException {
+    public static ArrayList<Integer> checkTheorem() throws IOException {
         ArrayList<Integer> lagrangeDigits = new ArrayList<Integer>();
-        System.out.println("Please enter a value");
+        logger.info("Please enter a value");
         int number = Integer.parseInt(reader.readLine());
         int temporaryNumber = number;
 
@@ -66,8 +67,6 @@ public class Algorythm {
         lagrangeDigits.add(thirdDigit);
         lagrangeDigits.add(fourthDigit);
 
-        System.out.print(lagrangeDigits);
-        System.out.println();
         return lagrangeDigits;
     }
 }
