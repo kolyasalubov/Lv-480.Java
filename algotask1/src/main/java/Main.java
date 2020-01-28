@@ -19,37 +19,7 @@ import java.io.InputStreamReader;
 
 
 public class Main {
-//<<<<<<< HEAD
-//    public static void main(String[] args) throws IOException {
-//        String inputChoise = args[0];
-//        int inputValue = Integer.valueOf(args[1]);
-//
-//        switch (inputChoise) {
-//
-//            //Huliaka Maksym
-//            case ("86a"):
-//                System.out.println(Calculator.getDigitQuantity(inputValue));
-//                break;
-//            case ("86b"):
-//                System.out.println(Calculator.getDigitSum(inputValue));
-//                break;
-//            case ("86c"):
-//                System.out.println(Calculator.getPerfectNumbersList(inputValue).toString());
-//                break;
-//            //Huliaka Maksym
-//            case ("88а"):
-//                System.out.println(Task.containsThree(inputValue));
-//                break;
-//            case ("88b"):
-//                System.out.println(Task.findReverse(inputValue));
-//                break;
-//            case ("322"):
-//                System.out.println(Task.findSum());
-//                break;
-//                //Isachenko Dima
-//            case (""):
-//                break;
-//=======
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         boolean flag = true;
@@ -80,7 +50,6 @@ public class Main {
             } else {
                 flag = false;
             }
-//>>>>>>> master
         }
         while (flag);
     }
