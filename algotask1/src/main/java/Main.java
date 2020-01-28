@@ -64,7 +64,7 @@ public class Main {
                         System.out.println(Calculator.getPerfectNumbersList(inputValue3).toString());
                         break;
                     //Maksym Huliaka
-
+                    
                 }
             } else {
                 flag = false;
