@@ -1,22 +1,23 @@
 package latyk.borys;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class Algorythm {
     /**
-     * Static variable for data input.
+     * Static variable for data output.
      * Created by Borys Latyk on 24/01/2020.
      */
-    private static BufferedReader reader = new BufferedReader(
-            new InputStreamReader(System.in));
 
-   public static int swapDigits() throws IOException {
-        System.out.println("Please enter a value");
+    public static Logger logger = Logger.getLogger(Algorythm.class.getName());
+
+    public static int swapDigits(String value) throws IOException {
         StringBuilder builder = new StringBuilder();
 
-        builder.append(reader.readLine());
+        builder.append(value);
         String start = builder.substring(0, 1);
         String end = builder.substring(builder.length() - 1);
 
@@ -26,27 +27,23 @@ public class Algorythm {
         builder.append(start);
 
         int number = Integer.parseInt(String.valueOf((builder)));
-        System.out.println(number);
         return number;
     }
 
-  public  static int addDigits() throws IOException {
-        System.out.println("Please enter a value");
+    public static int addDigits(String value) throws IOException {
         StringBuilder builder = new StringBuilder();
 
-        builder.append(reader.readLine());
+        builder.append(value);
         builder.insert(0, "1");
         builder.append("1");
 
         int updatedNumber = Integer.parseInt(String.valueOf(builder));
-        System.out.println(updatedNumber);
         return updatedNumber;
     }
 
-   public static ArrayList<Integer> checkTheorem() throws IOException {
+    public static ArrayList<Integer> checkTheorem(String value) throws IOException {
         ArrayList<Integer> lagrangeDigits = new ArrayList<Integer>();
-        System.out.println("Please enter a value");
-        int number = Integer.parseInt(reader.readLine());
+        int number = Integer.parseInt(value);
         int temporaryNumber = number;
 
         int firstDigit = (int) Math.sqrt(temporaryNumber);
@@ -66,8 +63,6 @@ public class Algorythm {
         lagrangeDigits.add(thirdDigit);
         lagrangeDigits.add(fourthDigit);
 
-        System.out.print(lagrangeDigits);
-        System.out.println();
         return lagrangeDigits;
     }
 }
