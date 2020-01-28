@@ -79,6 +79,23 @@ public class Main {
                         break;
                     //Borys Latyk
 
+                    //Dmytro Isachenko
+                    case ("88а"):
+                        int inputNumber1=Integer.parseInt(reader.readLine());
+                        System.out.println("is there a number 3 "
+                                + Task.containsThree(inputNumber1));
+                        break;
+                    case ("88b"):
+                        int inputNumber2=Integer.parseInt(reader.readLine());
+                        System.out.println("reverse number "
+                                + Task.findReverse(inputNumber2));
+                        break;
+                    case ("322"):
+                        System.out.println("the number from 1 to 10000 with the maximum sum of divisors " +
+                        Task.findSum());
+                        break;
+                    //Isachenko Dmytro
+
                 }
             } else {
                 flag = false;
