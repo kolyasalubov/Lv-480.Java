@@ -48,7 +48,7 @@
                             ThirdTask.getAllPythagoreanTriplesOfNumber();
                             break;
                         //Roman Blavatskyi
-                        
+
                         //Maksym Huliaka
                         case ("86a"):
                             logger.info("Number to calculate digit quantity");
