@@ -68,16 +68,19 @@ public class Main {
                     //Maksym Huliaka
                     //Borys Latyk
                     case ("88в"):
+                        logger.info("Please enter a value");
                         logger.info("Swap the first and the last digit "
-                                + Algorythm.swapDigits());
+                                + Algorythm.swapDigits(reader.readLine()));
                         break;
                     case ("88г"):
+                        logger.info("Please enter a value");
                         logger.info("Add digit 1 to the beginning end to the end of number "
-                                + Algorythm.addDigits());
+                                + Algorythm.addDigits(reader.readLine()));
                         break;
                     case ("332"):
+                        logger.info("Please enter a value");
                         logger.info("Lagrange theorem " +
-                        Algorythm.checkTheorem());
+                        Algorythm.checkTheorem(reader.readLine()));
                         break;
                     //Borys Latyk
 
