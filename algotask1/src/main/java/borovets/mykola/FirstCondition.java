@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class    FirstCondition {
+public class FirstCondition {
      public static int checkCount(final List<Integer> nums) {
         int count = 0;
         for (int k = 1; k < nums.size() - 1; k++) {
