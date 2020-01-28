@@ -1,4 +1,4 @@
-//package main.java;
+
 
 import huliaka.maksym.Calculator;
 
@@ -45,6 +45,22 @@ public class Main {
                         ThirdTask.getAllPythagoreanTriplesOfNumber();
                         break;
                     //Roman Blavatskyi
+
+                    //Borys Latyk
+                    case ("88в"):
+                        System.out.println("Swap the first and the last digit "
+                                + Algorythm.swapDigits());
+                        break;
+                    case ("88г"):
+                        System.out.println("Add digit 1 to the beginning end to the end of number"
+                                + Algorythm.addDigits());
+                        break;
+                    case ("332"):
+                        System.out.println("Lagrange theorem " +
+                        Algorythm.checkTheorem());
+                        break;
+                    //Borys Latyk
+
                 }
             } else {
                 flag = false;
