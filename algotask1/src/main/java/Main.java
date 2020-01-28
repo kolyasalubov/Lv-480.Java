@@ -1,3 +1,5 @@
+package main.java;
+
 import huliaka.maksym.Calculator;
 
 import isachenko.dmytro.Task;
