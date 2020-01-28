@@ -125,9 +125,6 @@
                             logger.info("result: " + SumOfTwoSquares.find(inputNumber3));
                             break;
                         //Andriy Pyzh
-
-
-    >>>>>>> 60efc7ef7c5e88be47f34b130cc8f1c3dc899163
                     }
                 } else {
                     flag = false;
