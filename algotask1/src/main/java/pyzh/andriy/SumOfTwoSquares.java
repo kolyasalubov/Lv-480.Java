@@ -5,8 +5,8 @@ import java.util.logging.Logger;
 
 public class SumOfTwoSquares {
 
-    private static Logger log = Logger.getLogger(
-            SumOfTwoSquares.class.getName());
+    private static Logger log =
+            Logger.getLogger(SumOfTwoSquares.class.getName());
 
     public static List<List<Integer>> find(final int number) {
         if (number <= 1) {

@@ -4,8 +4,8 @@ import java.util.logging.Logger;
 
 public class Power {
 
-    private static Logger log = Logger.getLogger(
-            Power.class.getName());
+    private static Logger log =
+            Logger.getLogger(Power.class.getName());
 
     public static int find(int m) {
         if (m <= 1) {
