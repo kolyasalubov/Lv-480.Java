@@ -6,30 +6,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task178b {
+public class ReadingNumbersFromConsole {
     private static BufferedReader reader = new BufferedReader(
             new InputStreamReader(System.in));
-
-    public static void main(String[] args) throws IOException {
-        List<Integer> integerList = new ArrayList<>();
-        integerList = readNumbersFromConsole();
-        System.out.println("Natural numbers = " + integerList);
-        int multiplesAmount = getAmountOfMultiples(integerList);
-        System.out.println("Amount of multiples: " + multiplesAmount);
-    }
-
-    public static int getAmountOfMultiples(List<Integer> numbers) {
-        int n = 0;
-        System.out.println("Multiples of 3 and not multiples of 5:");
-        for (Integer l : numbers) {
-            if ((l % 3 == 0) && (l % 5 != 0)) {
-                n++;
-                System.out.print(l + " ");
-            }
-        }
-        System.out.println();
-        return n;
-    }
 
     public static List<Integer> readNumbersFromConsole() throws IOException {
         List<Integer> numbers = new ArrayList<>();
@@ -53,8 +32,8 @@ public class Task178b {
     }
 
     private static void printMenu() {
-        System.out.println("Options menu:\n" +
-                "\tPress <- 1 -> to enter natural number.\n" +
-                "\tPress <- 2 -> to exit.");
+        System.out.println("Options menu:\n"
+                + "\tPress <- 1 -> to enter natural number.\n"
+                + "\tPress <- 2 -> to exit.");
     }
 }
