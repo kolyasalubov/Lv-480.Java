@@ -2,6 +2,7 @@ package blavatskyi.roman;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * The SecondTask program implements logical task
@@ -13,25 +14,30 @@ import java.util.List;
  */
 public class SecondTask {
     /**
-     * {@link SecondTask#DIGIT_ROOT_ONE}
+     * {@link SecondTask#DIGIT_ROOT_ONE}.
      */
     private static final int DIGIT_ROOT_ONE = 1;
     /**
-     * {@link SecondTask#DIGIT_ROOT_FOUR}
+     * {@link SecondTask#DIGIT_ROOT_FOUR}.
      */
     private static final int DIGIT_ROOT_FOUR = 4;
     /**
-     * {@link SecondTask#DIGIT_ROOT_SEVEN}
+     * {@link SecondTask#DIGIT_ROOT_SEVEN}.
      */
     private static final int DIGIT_ROOT_SEVEN = 7;
     /**
-     * {@link SecondTask#DIGIT_ROOT_NINE}
+     * {@link SecondTask#DIGIT_ROOT_NINE}.
      */
     private static final int DIGIT_ROOT_NINE = 9;
     /**
-     * {@link SecondTask#TEN}
+     * {@link SecondTask#TEN}.
      */
     private static final int TEN = 10;
+    /**
+     * Variable of class Logger is used to display message in console.
+     */
+    private static Logger logger =
+            Logger.getLogger(ReadingNumbersFromConsole.class.getName());
 
     /**
      * This method is used to find the number of sequence members
@@ -43,17 +49,17 @@ public class SecondTask {
      *                     due to reading user input
      */
     public static int getAmountSquaresOfEvenNumbers() throws IOException {
-        System.out.println("------------------------------------------------");
-        System.out.println("Given the natural numbers n, a1...an. "
+        logger.info("-------------------------------------------------------");
+        logger.info("Given the natural numbers n, a1...an. "
                 + "\nDetermine the number of sequence members "
                 + "that are squares of even numbers.");
-        System.out.println("------------------------------------------------");
+        logger.info("-------------------------------------------------------");
         List<Integer> numbers =
                 ReadingNumbersFromConsole.readNumbersFromConsole();
-        System.out.println("Natural numbers = " + numbers);
+        logger.info("Natural numbers = " + numbers);
         int n = 0;
         int digitalRoot;
-        System.out.println("Numbers which are squares of even numbers:");
+        logger.info("Numbers which are squares of even numbers:");
         for (Integer l : numbers) {
             digitalRoot = findDigitalRootOfNumber(l);
             if ((l % 2 == 0) && ((digitalRoot == DIGIT_ROOT_ONE)
@@ -61,10 +67,9 @@ public class SecondTask {
                     || (digitalRoot == DIGIT_ROOT_SEVEN)
                     || (digitalRoot == DIGIT_ROOT_NINE))) {
                 n++;
-                System.out.print(l + " ");
+                logger.info(l + " ");
             }
         }
-        System.out.println();
         return n;
     }
 
