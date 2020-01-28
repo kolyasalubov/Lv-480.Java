@@ -1,4 +1,4 @@
-//package main.java;
+
 
 import huliaka.maksym.Calculator;
 
@@ -30,6 +30,7 @@ public class Main {
                 System.out.println("Enter number of your task:");
                 String inputChoice = reader.readLine();
                 switch (inputChoice) {
+
                     //Roman Blavatskyi
                     case ("178b"):
                         System.out.println("Amount of sequence members "
@@ -45,6 +46,38 @@ public class Main {
                         ThirdTask.getAllPythagoreanTriplesOfNumber();
                         break;
                     //Roman Blavatskyi
+                    //Maksym Huliaka
+                    case ("86a"):
+                        System.out.println("Number to calculate digit quantity");
+                        int inputValue = Integer.parseInt(reader.readLine());
+                        System.out.println(Calculator.getDigitQuantity(inputValue));
+                        break;
+                    case ("86b"):
+                        System.out.println("Number to calculate digit sum");
+                        int inputValue2 = Integer.parseInt(reader.readLine());
+                        System.out.println(Calculator.getDigitSum(inputValue2));
+                        break;
+                    case ("330"):
+                        System.out.println("perfect numbers that lower than number:");
+                        int inputValue3 = Integer.parseInt(reader.readLine());
+                        System.out.println(Calculator.getPerfectNumbersList(inputValue3).toString());
+                        break;
+                    //Maksym Huliaka
+                    //Borys Latyk
+                    case ("88в"):
+                        System.out.println("Swap the first and the last digit "
+                                + Algorythm.swapDigits());
+                        break;
+                    case ("88г"):
+                        System.out.println("Add digit 1 to the beginning end to the end of number"
+                                + Algorythm.addDigits());
+                        break;
+                    case ("332"):
+                        System.out.println("Lagrange theorem " +
+                        Algorythm.checkTheorem());
+                        break;
+                    //Borys Latyk
+
                 }
             } else {
                 flag = false;
@@ -59,4 +92,3 @@ public class Main {
                 + "\tPress <- 2 -> to exit.");
     }
 }
-
