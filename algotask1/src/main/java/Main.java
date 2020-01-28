@@ -87,13 +87,13 @@ public class Main {
                         logger.info(String.valueOf(MathOperation.getSmallestNumber(Integer.parseInt(reader.readLine()))));
                         break;
                     case ("331a"):
-                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Чи можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
-                        MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(System.out::println);
+                        MathOperation.getSumOfThreeSquaresA(Integer.parseInt(reader.readLine())).forEach(value -> logger.info(value));
                         break;
                     case ("331b"):
-                        logger.info("Дано натуральне число n. Можливо представити його у виді суми трьох квадратів натуальних чисел. " +
+                        logger.info("Дано натуральне число n. Чи можливо представити його у виді суми трьох квадратів натуальних чисел. " +
                                 "\n" + "Якщо можна, то вказати всю трійку x, y, z таких натуральних чисел," +
                                 "що n = x^2 + y^2 + z^2" + "\n" + "Enter n: ");
                         logger.info(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));

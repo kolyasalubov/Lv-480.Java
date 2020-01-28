@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51494a0b-0999-4836-9c91-30752899ff43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huliaka/maksym/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huliaka/maksym/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/latyk/borys/Algorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/latyk/borys/Algorythm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/latyk/borys/Algorythm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/huliaka/maksym/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/huliaka/maksym/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +80,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="algotask1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -107,7 +109,7 @@
       <workItem from="1580199128917" duration="641000" />
       <workItem from="1580201114017" duration="210000" />
       <workItem from="1580201894898" duration="4100000" />
-      <workItem from="1580239457163" duration="597000" />
+      <workItem from="1580239457163" duration="1422000" />
     </task>
     <servers />
   </component>
@@ -128,10 +130,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580202240760">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580240879611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580202240760" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580240879611" />
     <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580202024566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -144,22 +146,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580204334116" />
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1580205348039">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1580240884378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580205348039" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1580205348039">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1580240884378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580205348039" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1580205348039">
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1580240884378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580205348039" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1580205348039">
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1580240884378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580205348039" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580240884378" />
     <state x="499" y="141" key="chooseDestDirectoryDialog" timestamp="1580202163664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
