@@ -18,7 +18,8 @@ import java.util.logging.Logger;
 
 
 public class Main {
-    public static Logger logger=Logger.getLogger(Main.class.getName());
+    public static Logger logger = Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         boolean flag = true;
@@ -27,7 +28,7 @@ public class Main {
             printMenu();
             temp = Integer.parseInt(reader.readLine());
             if (temp == 1) {
-               logger.info("Enter number of your task:");
+                logger.info("Enter number of your task:");
                 String inputChoice = reader.readLine();
                 switch (inputChoice) {
 
@@ -38,7 +39,7 @@ public class Main {
                                 + FirstTask.getAmountOfMultiples());
                         break;
                     case ("178c"):
-                       logger.info("Amount of sequence members "
+                        logger.info("Amount of sequence members "
                                 + "that are squares of even numbers: "
                                 + SecondTask.getAmountSquaresOfEvenNumbers());
                         break;
@@ -67,16 +68,19 @@ public class Main {
 
                     //Borys Latyk
                     case ("88в"):
+                        logger.info("Please enter a value");
                         logger.info("Swap the first and the last digit "
-                                + Algorythm.swapDigits());
+                                + Algorythm.swapDigits(reader.readLine()));
                         break;
                     case ("88г"):
+                        logger.info("Please enter a value");
                         logger.info("Add digit 1 to the beginning end to the end of number "
-                                + Algorythm.addDigits());
+                                + Algorythm.addDigits(reader.readLine()));
                         break;
                     case ("332"):
+                        logger.info("Please enter a value");
                         logger.info("Lagrange theorem " +
-                        Algorythm.checkTheorem());
+                        Algorythm.checkTheorem(reader.readLine()));
                         break;
                     //Borys Latyk
 
@@ -99,6 +103,28 @@ public class Main {
                         logger.info(MathOperation.getSumOfThreeSquaresB(Integer.parseInt(reader.readLine())));
                         break;
                     //Puiko Vadym
+
+                    //Andriy Pyzh
+                    case ("107"):
+                        logger.info("Given number m > 1. Find k that 4 ^ k < m.\n" +
+                                "Input m:");
+                        int inputNumber1 = Integer.parseInt(reader.readLine());
+                        logger.info("k = " + Power.find(inputNumber1));
+                        break;
+                    case ("243a"):
+                        logger.info("Given number m > 1. Can number m be represented as sum of squares?\n" +
+                                "Input m: ");
+                        int inputNumber2 = Integer.parseInt(reader.readLine());
+                        logger.info("result: " + SumOfTwoSquares.exist(inputNumber2));
+                        break;
+                    case ("243b"):
+                        logger.info("Given number m > 1. Find all x, y that x ^ 2 + y ^ 2 = m " +
+                                "Input m: ");
+                        int inputNumber3 = Integer.parseInt(reader.readLine());
+                        logger.info("result: " + SumOfTwoSquares.find(inputNumber3));
+                        break;
+                    //Andriy Pyzh
+
 
                 }
             } else {
