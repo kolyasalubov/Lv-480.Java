@@ -13,7 +13,7 @@ public class Calculator {
     /**
      * constant number to use inside calculating methods
      */
-    private final static int numberTen = 10;
+    private final static int NUMBER_TEN = 10;
 
     /**
      * method that finds digits quantity of input number
@@ -25,9 +25,9 @@ public class Calculator {
     public static int getDigitQuantity(final int testNumber) {
         int result = 1;
         int number = testNumber;
-        while (abs(number) >= numberTen) {
+        while (abs(number) >= NUMBER_TEN) {
             result++;
-            number /= numberTen;
+            number /= NUMBER_TEN;
         }
         return result;
     }
@@ -43,8 +43,8 @@ public class Calculator {
         int result = 0;
         int testNumber = number;
         while (abs(testNumber) > 0) {
-            result += abs(testNumber) % numberTen;
-            testNumber /= numberTen;
+            result += abs(testNumber) % NUMBER_TEN;
+            testNumber /= NUMBER_TEN;
         }
         return result;
     }
