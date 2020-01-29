@@ -138,6 +138,23 @@
                             logger.info("result: " + SumOfTwoSquares.find(inputNumber3));
                             break;
                         //Andriy Pyzh
+
+                        //Dmytro Isachenko
+                        case ("88а"):
+                            int inputNumber11=Integer.parseInt(reader.readLine());
+                            logger.info("is there a number 3 "
+                                    + Task.containsThree(inputNumber11));
+                            break;
+                        case ("88b"):
+                            int inputNumber22=Integer.parseInt(reader.readLine());
+                            logger.info("reverse number "
+                                    + Task.findReverse(inputNumber22));
+                            break;
+                        case ("322"):
+                            logger.info("the number from 1 to 10000 with the maximum sum of divisors " +
+                                    Task.findSum());
+                            break;
+                        //Isachenko Dmytro
                     }
                 } else {
                     flag = false;
