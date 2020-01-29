@@ -81,7 +81,7 @@ public class Main {
                     case ("332"):
                         logger.info("Please enter a value");
                         logger.info("Lagrange theorem " +
-                        Algorythm.checkTheorem(reader.readLine()));
+                                Algorythm.checkTheorem(reader.readLine()));
                         break;
                     //Borys Latyk
 
@@ -150,22 +150,38 @@ public class Main {
                         logger.info("result: " + AlgorithmTask.findMersenNumbers(inputValue8));
                         break;
                     //Ostapiuk Mykhailo
+
+                    //Dmytro Isachenko
+                    case ("88а"):
+                        int inputNumber11 = Integer.parseInt(reader.readLine());
+                        logger.info("is there a number 3 "
+                                + Task.containsThree(inputNumber11));
+                        break;
+                    case ("88b"):
+                        int inputNumber22 = Integer.parseInt(reader.readLine());
+                        logger.info("reverse number "
+                                + Task.findReverse(inputNumber22));
+                        break;
+                    case ("322"):
+                        logger.info("the number from 1 to 10000 with the maximum sum of divisors " +
+                                Task.findSum());
+                        break;
+                    //Isachenko Dmytro
+
                     default:
                         logger.info("No such task number. Please input another number from list: ");
                         logger.info("86a, 86b, 87, 88a, 88b, 88v, 88g, 107, 108, 178b, 178v, 178g");
                         logger.info("226, 243a, 243b, 322, 330, 331a, 331b, 332, 554, 555, 559");
                         break;
+                    }
                 }
-            } else {
-                flag = false;
             }
+            while (flag);
         }
-        while (flag);
-    }
 
-    private static void printMenu() {
-        logger.info("Options menu:\n"
-                + "\tPress <- 1 -> to solve logical tasks.\n"
-                + "\tPress <- 2 -> to exit.");
+        private static void printMenu() {
+            logger.info("Options menu:\n"
+                    + "\tPress <- 1 -> to solve logical tasks.\n"
+                    + "\tPress <- 2 -> to exit.");
+        }
     }
-}
