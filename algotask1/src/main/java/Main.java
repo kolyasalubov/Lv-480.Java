@@ -4,6 +4,7 @@ import isachenko.dmytro.Task;
 
 import latyk.borys.Algorythm;
 
+import ostapiuk.mykhailo.AlgorithmTask;
 import puiko.vadym.MathOperation;
 
 import pyzh.andriy.Power;
@@ -38,7 +39,7 @@ public class Main {
                                 + "by multiples of 3 and not multiples of 5: "
                                 + FirstTask.getAmountOfMultiples());
                         break;
-                    case ("178c"):
+                    case ("178v"):
                         logger.info("Amount of sequence members "
                                 + "that are squares of even numbers: "
                                 + SecondTask.getAmountSquaresOfEvenNumbers());
@@ -67,12 +68,12 @@ public class Main {
                     //Maksym Huliaka
 
                     //Borys Latyk
-                    case ("88в"):
+                    case ("88v"):
                         logger.info("Please enter a value");
                         logger.info("Swap the first and the last digit "
                                 + Algorythm.swapDigits(reader.readLine()));
                         break;
-                    case ("88г"):
+                    case ("88g"):
                         logger.info("Please enter a value");
                         logger.info("Add digit 1 to the beginning end to the end of number "
                                 + Algorythm.addDigits(reader.readLine()));
@@ -125,7 +126,35 @@ public class Main {
                         break;
                     //Andriy Pyzh
 
-
+                    //Ostapiuk Mykhailo
+                    case ("87"):
+                        logger.info("Sum last m digits of n number:");
+                        logger.info("Input your number: ");
+                        long inputValue4 = Long.parseLong(reader.readLine());
+                        logger.info("Input amount of last digits: ");
+                        long inputValue5 = Long.parseLong(reader.readLine());
+                        logger.info("result: " + AlgorithmTask.sumLastDigits(inputValue4, inputValue5));
+                        break;
+                    case ("226"):
+                        logger.info("Find multiple to n, m less then m*n");
+                        logger.info("Input number1: ");
+                        long inputValue6 = Long.parseLong(reader.readLine());
+                        logger.info("Input number2: ");
+                        long inputValue7 = Long.parseLong(reader.readLine());
+                        logger.info("result: " + AlgorithmTask.findCommonMultiple(inputValue6, inputValue7));
+                        break;
+                    case ("559"):
+                        logger.info("Find all Mersen numbers less then n: ");
+                        logger.info("Input number: ");
+                        int inputValue8 = Integer.parseInt(reader.readLine());
+                        logger.info("result: " + AlgorithmTask.findMersenNumbers(inputValue8));
+                        break;
+                    //Ostapiuk Mykhailo
+                    default:
+                        logger.info("No such task number. Please input another number from list: ");
+                        logger.info("86a, 86b, 87, 88a, 88b, 88v, 88g, 107, 108, 178b, 178v, 178g");
+                        logger.info("226, 243a, 243b, 322, 330, 331a, 331b, 332, 554, 555, 559");
+                        break;
                 }
             } else {
                 flag = false;
