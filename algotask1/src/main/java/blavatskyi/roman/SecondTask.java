@@ -42,13 +42,13 @@ public class SecondTask {
     /**
      * This method is used to find the number of sequence members
      * that are squares of even numbers.
-     *
-     * @return int This method returns amount of sequence members
+     * <p>
      * that are squares of even numbers.
+     *
      * @throws IOException This method throws IOException
      *                     due to reading user input
      */
-    public static int getAmountSquaresOfEvenNumbers() throws IOException {
+    public static void printAmountSquaresOfEvenNumbers() throws IOException {
         logger.info("-------------------------------------------------------");
         logger.info("Given the natural numbers n, a1...an. "
                 + "\nDetermine the number of sequence members "
@@ -57,10 +57,24 @@ public class SecondTask {
         List<Integer> numbers =
                 ReadingNumbersFromConsole.readNumbersFromConsole();
         logger.info("Natural numbers = " + numbers);
+        logger.info("Numbers which are squares of even numbers:");
+        int amountOfSquares = getAmountSquaresOfEvenNumbers(numbers);
+        logger.info("Amount of sequence members "
+                + "that are squares of even numbers: "
+                + amountOfSquares);
+
+    }
+
+    /**
+     * This method is used to find the number of squares of even numbers.
+     *
+     * @param integers This is sequence of natural numbers
+     * @return List This method return amount of squares of even numbers
+     */
+    public static int getAmountSquaresOfEvenNumbers(List<Integer> integers) {
         int n = 0;
         int digitalRoot;
-        logger.info("Numbers which are squares of even numbers:");
-        for (Integer l : numbers) {
+        for (Integer l : integers) {
             digitalRoot = findDigitalRootOfNumber(l);
             if ((l % 2 == 0) && ((digitalRoot == DIGIT_ROOT_ONE)
                     || (digitalRoot == DIGIT_ROOT_FOUR)
@@ -73,7 +87,13 @@ public class SecondTask {
         return n;
     }
 
-    private static int findDigitalRootOfNumber(int number) {
+    /**
+     * This method is used to find digital root of the number.
+     *
+     * @param number This is a variable used to find digital root of
+     * @return List This method return digital root of the number
+     */
+    public static int findDigitalRootOfNumber(int number) {
         int rootNumber = 0;
         while (number >= 1) {
             rootNumber = rootNumber + (number % TEN);

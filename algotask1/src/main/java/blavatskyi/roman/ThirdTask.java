@@ -32,7 +32,7 @@ public class ThirdTask {
      * @throws IOException This method throws IOException
      *                     due to reading user input
      */
-    public static void getAllPythagoreanTriplesOfNumber() throws IOException {
+    public static void printAllPythagoreanTriplesOfNumber() throws IOException {
         logger.info("-------------------------------------------------------");
         logger.info("Given the natural number n. "
                 + "\nObtain all Pythagorean triples of positive integers,"
@@ -42,17 +42,31 @@ public class ThirdTask {
         logger.info("Enter natural number: ");
         int n = Integer.parseInt(reader.readLine());
         logger.info("Pythagorean Triples: ");
-        for (int a = 1; a <= n; a++) {
-            for (int b = 1; b <= n; b++) {
+        int pythagoreanTriples = getAllPythagoreanTriplesOfNumber(n);
+        logger.info("Amount of Pythagorean Triples: " + pythagoreanTriples);
+    }
+
+    /**
+     * This method is used to find Pythagorean triples of the number.
+     *
+     * @param number This is a variable used to find Pythagorean triples of
+     * @return List This method return digital root of the number
+     */
+    public static int getAllPythagoreanTriplesOfNumber(int number) {
+        int n = 0;
+        for (int a = 1; a <= number; a++) {
+            for (int b = 1; b <= number; b++) {
                 double cSquared = Math.pow(a, 2) + Math.pow(b, 2);
                 double cRoot = Math.sqrt(cSquared);
                 if ((cRoot == Math.ceil(cRoot)) && (a <= b) && (b <= cRoot)
-                        && (cRoot <= n)) {
+                        && (cRoot <= number)) {
                     logger.info(a + "^2 + " + b + "^2 = "
                             + (int) cRoot + "^2");
+                    n++;
                 }
             }
         }
+        return n;
     }
 
 }

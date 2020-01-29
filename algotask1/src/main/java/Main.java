@@ -30,17 +30,13 @@ public class Main {
                 switch (inputChoice) {
                     //Roman Blavatskyi
                     case ("178b"):
-                        logger.info("Amount of sequence members "
-                                + "by multiples of 3 and not multiples of 5: "
-                                + FirstTask.getAmountOfMultiples());
+                        FirstTask.printAmountOfMultiples();
                         break;
                     case ("178c"):
-                        logger.info("Amount of sequence members "
-                                + "that are squares of even numbers: "
-                                + SecondTask.getAmountSquaresOfEvenNumbers());
+                        SecondTask.printAmountSquaresOfEvenNumbers();
                         break;
                     case ("554"):
-                        ThirdTask.getAllPythagoreanTriplesOfNumber();
+                        ThirdTask.printAllPythagoreanTriplesOfNumber();
                         break;
                     //Roman Blavatskyi
 
