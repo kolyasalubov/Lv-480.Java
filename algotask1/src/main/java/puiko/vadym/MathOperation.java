@@ -13,6 +13,9 @@ public class MathOperation {
     /* Дано натуральне число n. Отримати найменше число 2^r, яке перевищює n. */
 
     public static int getSmallestNumber(final int n) {
+        if (n < 1 || n > 1000000000) {
+            throw new NumberFormatException("Not correct number");
+        }
         int r = 1;
         while (r <= n) {
             r = r * 2;
@@ -24,6 +27,9 @@ public class MathOperation {
     Якщо можна, то вказати трійку x, y, z таких натуральних чисел, що n = x^2 + y^2 + z^2. */
 
     public static List<String> getSumOfThreeSquaresA(final int n) {
+        if (n < 1 || n > 1000000000) {
+            throw new NumberFormatException("Not correct number");
+        }
         List<String> values = new ArrayList<>();
         for (int x = 0; x < n; x++) {
             for (int y = 0; y < n; y++) {
@@ -42,6 +48,9 @@ public class MathOperation {
         Якщо можна, то вказати всю трійку x, y, z таких натуральних чисел, що n = x^2 + y^2 + z^2 */
 
     public static String getSumOfThreeSquaresB(final int n) {
+        if (n < 1 || n > 1000000000) {
+            throw new NumberFormatException("Not correct number");
+        }
         for (int x = 0; x < n; x++) {
             for (int y = 0; y < n; y++) {
                 for (int z = 0; z < n; z++) {
