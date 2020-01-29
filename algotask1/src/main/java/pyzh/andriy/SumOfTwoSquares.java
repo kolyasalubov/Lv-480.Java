@@ -10,10 +10,10 @@ public class SumOfTwoSquares {
 
     public static List<List<Integer>> find(final int number) {
         if (number <= 1) {
-            log.info("Wrong number");
+            throw new IllegalArgumentException("Wrong number");
         }
         if (!exist(number)) {
-            log.info("Number cannot be represented as sum of two squares");
+            throw new IllegalArgumentException("Number cannot be represented as sum of two squares");
         }
         ArrayList<List<Integer>> pairs = new ArrayList<>();
         for (int i = 0; i * i < number; i++) {
@@ -27,8 +27,11 @@ public class SumOfTwoSquares {
     }
 
 
-    public static boolean exist(final int m) {
-        List<Integer> factors = factorizeNumber(m);
+    public static boolean exist(final int number) throws IllegalArgumentException {
+        if (number <= 1) {
+            throw new IllegalArgumentException("Wrong number");
+        }
+        List<Integer> factors = factorizeNumber(number);
 
         Set<Integer> uniqueFactors = new HashSet<>(factors);
 
