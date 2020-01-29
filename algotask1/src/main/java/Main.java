@@ -1,6 +1,5 @@
-package main.java;
 
-import borovets.mykola.FirstCondition;
+    import borovets.mykola.FirstCondition;
     import borovets.mykola.SecondCondition;
     import huliaka.maksym.Calculator;
 
