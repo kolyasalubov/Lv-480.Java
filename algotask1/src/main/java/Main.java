@@ -140,14 +140,18 @@
                         //Andriy Pyzh
 
                         //Dmytro Isachenko
-                        case ("88а"):
+                        case ("88a"):
+                            logger.info("Solution shows is square of the input number contains 3");
+                            logger.info("Enter number:");
                             int inputNumber11=Integer.parseInt(reader.readLine());
-                            logger.info("is there a number 3 "
+                            logger.info("Is there a number 3: "
                                     + Task.containsThree(inputNumber11));
                             break;
                         case ("88b"):
+                            logger.info("Solution shows inverted number to input number");
+                            logger.info("Enter number:");
                             int inputNumber22=Integer.parseInt(reader.readLine());
-                            logger.info("reverse number "
+                            logger.info("Inverted number: "
                                     + Task.findReverse(inputNumber22));
                             break;
                         case ("322"):

@@ -20,12 +20,11 @@ public class Task {
         return numberI;
     }
     public static int findReverse(final int n) {
-        final int ten = 10;
         int intputNumber = n;
         int result = 0;
         while (intputNumber != 0) {
-            result = result * ten + intputNumber % ten;
-            intputNumber = intputNumber / ten;
+            result = result * 10 + intputNumber % 10;
+            intputNumber = intputNumber / 10;
         }
         return result;
     }
